@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fregments.SaveChaptersFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/llBhagawatGita"
+            android:layout_width="wrap_content"
+            android:layout_height="65.00dp"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="19.50dp"
+                android:layout_height="19.50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kalash" />
+
+            <TextView
+                android:id="@+id/tvBhagavat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.60dp"
+                android:text="Shree Bhagavat Gita"
+                android:textColor="@color/orange"
+                android:textSize="26.00dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="19.50dp"
+                android:layout_height="19.50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kalash" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvChapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="23.40sp"
+        android:textStyle="bold"
+        android:text="Saved Chapters" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6.50dp"
+            android:visibility="visible"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <include layout="@layout/shimmer_tv_chapters"/>
+                <include layout="@layout/shimmer_tv_chapters"/>
+                <include layout="@layout/shimmer_tv_chapters"/>
+                <include layout="@layout/shimmer_tv_chapters"/>
+                <include layout="@layout/shimmer_tv_chapters"/>
+                <include layout="@layout/shimmer_tv_chapters"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChapters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6.50dp"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_view_chapters"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvShowingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="No Chapters has saved! \nNext time save some chapter when you are online"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="2.60dp"
+        android:textSize="14.30sp"
+        android:textColor="@color/orange"/>
+
+</LinearLayout>

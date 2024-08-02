@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.fregments.VerseDetailFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llBhagawatGita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="19.50dp"
+                            android:layout_height="19.50dp"
+                            android:src="@drawable/kalash" />
+
+                        <TextView
+                            android:id="@+id/tvChapterNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="2.60dp"
+                            android:text="Shree Bhagavat Gita"
+                            android:textColor="@color/orange"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="19.50dp"
+                            android:layout_height="19.50dp"
+                            android:src="@drawable/kalash" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/llBhagawatGita"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivFavouriteVerse"
+                            android:layout_width="39dp"
+                            android:layout_height="39dp"
+                            android:src="@drawable/baseline_favorite_border_24"
+                            android:visibility="gone"
+                            app:tint="@color/orange" />
+
+                        <ImageView
+                            android:id="@+id/ivFavouriteVerseFilled"
+                            android:layout_width="39dp"
+                            android:layout_height="39dp"
+                            android:src="@drawable/baseline_favorite_24"
+                            android:visibility="gone"
+                            app:tint="@color/orange" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/orange"
+                    android:visibility="visible"
+                    app:indicatorColor="@color/orange"
+                    app:layout_anchor="@id/llBhagawatGita"
+                    app:layout_anchorGravity="bottom"
+                    app:trackColor="#F8D6C9" />
+
+                <TextView
+                    android:id="@+id/tvVerseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.00dp"
+                    android:gravity="center"
+                    android:text="||1.6||"
+                    android:textColor="@color/black"
+                    android:textSize="22.10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvVerseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6.50dp"
+                    android:layout_marginTop="9.10dp"
+                    android:gravity="center"
+                    android:text="अर्जुन उवाच ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन। तत्किं कर्मणि घोरे मां नियोजयसि केशव।।3.1।।"
+                    android:textColor="@color/orange"
+                    android:textSize="19.50sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvTranslationIfEnglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6.50dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="arjuna uvācha jyāyasī chet karmaṇas te matā buddhir janārdana tat kiṁ karmaṇi ghore māṁ niyojayasi keśhava"
+                    android:textColor="@color/black"
+                    android:textSize="14.30sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvWordIfEnglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6.50dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="arjunaḥ uvācha—Arjun said; jyāyasī—superior; chet—if; karmaṇaḥ—than fruitive action; te—by you; matā—is considered; buddhiḥ—intellect; janārdana—he who looks after the public, Krishna; tat—then; kim—why; karmaṇi—action; ghore—terrible; mām—me; niyojayasi—do you engage; keśhava—Krishna, the killer of the demon named Keshi;"
+                    android:textColor="@color/black"
+                    android:textSize="14.30sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/verse_view"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llTop">
+
+                <TextView
+                    android:id="@+id/tvTranslation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6.50dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="Translation"
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clTranslation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginTop="6.50dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_verse_card"
+                        android:orientation="vertical"
+                        android:padding="6.50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="6.50dp">
+
+                            <TextView
+                                android:id="@+id/tvAuthor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Author"
+                                android:textColor="#575656"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvArrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" : "
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAuthorName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Swami Sivananda"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="6.50dp"
+                            android:paddingBottom="26dp"
+                            android:text="Arjuna said: If Thou thinkest that knowledge is superior to action, O Krishna, why then, O Kesava, doest Thou ask me to engage in this terrible action?"
+                            android:textColor="#000000"
+                            android:textSize="16.90sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabTranslationRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="9.10dp"
+                        android:backgroundTint="@color/orange"
+                        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                        app:layout_constraintBottom_toBottomOf="@id/linearLayout"
+                        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+                        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                        app:tint="@color/white" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabTranslationLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9.10dp"
+                        android:backgroundTint="@color/orange"
+                        android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/linearLayout"
+                        app:layout_constraintStart_toStartOf="@id/linearLayout"
+                        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                        app:tint="@color/white" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tvCommentries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6.50dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="Commentary"
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clCommentries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginTop="6.50dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/llCommentry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_verse_card"
+                        android:orientation="vertical"
+                        android:padding="6.50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="6.50dp">
+
+                            <TextView
+                                android:id="@+id/tvAuthorCommentary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Author"
+                                android:textColor="#575656"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvArrowCommentary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" : "
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAuthorNameCommentary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Swami Sivananda"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvTextCommentary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:paddingHorizontal="6.50dp"
+                            android:paddingBottom="26dp"
+                            android:text="3.1 ज्यायसी superior? चेत् if? कर्मणः than action? ते by Thee? मता thought? बुद्धिः knowledge? जनार्दन O Janardana? तत् then? किम् why? कर्मणि in action? घोरे terrible? माम् me? नियोजयसि Thou engagest? केशव O Kesava.Commentary In verses 49? 50 and 51 of chapter II? Lord Krsihna has spoken very highly about Buddhi Yoga. He again asks Arjuna to fight. That is the reason why Arjuna is perplexed now. "
+                            android:textColor="#000000"
+                            android:textSize="16.90sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSeeMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="6.50dp"
+                            android:paddingBottom="26dp"
+                            android:text="Read More..."
+                            android:textColor="#0051F4"
+                            android:textSize="16.90sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabCommentaryRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="9.10dp"
+                        android:backgroundTint="@color/orange"
+                        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                        app:layout_constraintBottom_toBottomOf="@id/llCommentry"
+                        app:layout_constraintEnd_toEndOf="@id/llCommentry"
+                        app:layout_constraintTop_toBottomOf="@id/llCommentry"
+                        app:tint="@color/white" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabCommentaryLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9.10dp"
+                        android:backgroundTint="@color/orange"
+                        android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/llCommentry"
+                        app:layout_constraintStart_toStartOf="@id/llCommentry"
+                        app:layout_constraintTop_toBottomOf="@id/llCommentry"
+                        app:tint="@color/white" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:alpha="0.15"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/krsna"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivNoInternet"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/no_internet"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowingMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvShowingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="2.60dp"
+        android:gravity="center"
+        android:text="No internet connection \n Check for saced verses in settings"
+        android:textSize="14.30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
