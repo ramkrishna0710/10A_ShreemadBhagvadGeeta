@@ -5,7 +5,7 @@ A sleek and intuitive mobile application allowing users to easily fetch Chapters
 and save individual chapters as well as specific verses.
 
 ## Demo Video
-[Watch the demo video]()
+[Watch the demo video](https://hyuskkczickvvtfpmfsi.supabase.co/storage/v1/object/public/uploads/videos/socia%20media%20demo.mp4?t=2024-09-21T05%3A03%3A34.520Z)
 
 ## Screenshots
 
