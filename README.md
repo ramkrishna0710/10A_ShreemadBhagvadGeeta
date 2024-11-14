@@ -39,7 +39,7 @@ I'm a full stack developer with experience in building modern, scalable applicat
 Feel free to reach out to me at [ramkrishna0710mandal@gmail.com](mailto:ramkrishna0710mandal@gmail.com) 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://hyuskkczickvvtfpmfsi.supabase.co/storage/v1/object/public/uploads/photos/ram-resume.pdf?t=2024-09-19T19%3A42%3A26.873Z)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://hdsvzrvrursprvddhchp.supabase.co/storage/v1/object/sign/cvMedia/cv.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjdk1lZGlhL2N2LnBkZiIsImlhdCI6MTczMTYwOTA2MywiZXhwIjoxNzYzMTQ1MDYzfQ.g9RHrWF5k7dhZorfnnQ0Btr1dnJOlDncEEkHDErQniA&t=2024-11-14T18%3A31%3A03.180Z)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ramkrishna-mandal-787861283/)
 
 ### Support
