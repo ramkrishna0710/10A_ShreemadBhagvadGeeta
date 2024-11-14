@@ -5,7 +5,7 @@ A sleek and intuitive mobile application allowing users to easily fetch Chapters
 and save individual chapters as well as specific verses.
 
 ## Demo Video
-[Watch the demo video](https://hyuskkczickvvtfpmfsi.supabase.co/storage/v1/object/public/uploads/videos/gita%20demo.mp4?t=2024-09-21T05%3A04%3A28.151Z)
+[Watch the demo video](https://hdsvzrvrursprvddhchp.supabase.co/storage/v1/object/sign/cvMedia/gita%20demo.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjdk1lZGlhL2dpdGEgZGVtby5tcDQiLCJpYXQiOjE3MzE2MDg4NDUsImV4cCI6MTc2MzE0NDg0NX0.pe6YiAlsHGIIstLLlc0--JipXYVRKYSIl4S3NXSuP34&t=2024-11-14T18%3A27%3A25.354Z)
 ## Screenshots
 
 
